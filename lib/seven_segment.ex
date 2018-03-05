@@ -14,6 +14,7 @@ defmodule SevenSegment do
       - c: boolean representing the third digital input
       - d: boolean representing the last digital input
   """
+
   def decode(a, b, c, d)
   when is_boolean(a) and is_boolean(b) and is_boolean(c) and is_boolean(d) do
     nb = not_gate(b)
