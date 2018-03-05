@@ -13,7 +13,7 @@ by adding `seven_segment` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:seven_segment, "~> 0.1.0"}
+    {:seven_segment, "~> 0.8.0"}
   ]
 end
 ```
