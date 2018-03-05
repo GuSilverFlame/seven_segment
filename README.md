@@ -17,3 +17,6 @@ def deps do
   ]
 end
 ```
+
+## TODO
+accept values up to 15(hexadecimal f)
