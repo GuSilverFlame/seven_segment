@@ -29,20 +29,6 @@ defmodule LogicGates do
   end
 
   @doc """
-    boolean 'and' operation function with 4 elements
-
-    ## Parameters
-      - a: first boolean input
-      - b: second boolean input
-      - c: third boolean input
-      - d: fourth boolean input
-  """
-
-  def and_gate(a, b, c, d) do
-    and_gate(a,b,c) |> and_gate(d)
-  end
-
-  @doc """
     boolean 'or' operation function
 
     ## Parameters
