@@ -8,6 +8,8 @@ defmodule SevenSegment.MixProject do
       elixir: "~> 1.6",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
+      description: description(),
+      package: package(),
       test_coverage: [tool: ExCoveralls]
     ]
   end
@@ -16,6 +18,18 @@ defmodule SevenSegment.MixProject do
   def application do
     [
       extra_applications: [:logger]
+    ]
+  end
+
+  defp description do
+    "a seven segment display decoder logic simulation"
+  end
+
+  defp package do
+    [
+      maintainers: ["GuSilverFlame"],
+      licenses: ["MIT"],
+      links: %{"GitHub" => "https://github.com/GuSilverFlame/seven_segment"}
     ]
   end
 
