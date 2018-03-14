@@ -1,5 +1,6 @@
 defmodule SevenSegment do
   import LogicGates
+
   @moduledoc """
     SevenSegment decoder that outputs a list of booleans
     equivalent to the inputs of a seven segment display
@@ -16,7 +17,7 @@ defmodule SevenSegment do
   """
 
   def decode(a, b, c, d)
-  when is_boolean(a) and is_boolean(b) and is_boolean(c) and is_boolean(d) do
+      when is_boolean(a) and is_boolean(b) and is_boolean(c) and is_boolean(d) do
     nb = not_gate(b)
     nc = not_gate(c)
     nd = not_gate(d)
@@ -74,5 +75,4 @@ defmodule SevenSegment do
   defp binary_string_to_bool_list("1" <> rest) do
     [true] ++ binary_string_to_bool_list(rest)
   end
-
 end

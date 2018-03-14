@@ -12,7 +12,7 @@ defmodule LogicGates do
   """
 
   def and_gate(a, b) when is_boolean(a) and is_boolean(b) do
-    a&&b
+    a && b
   end
 
   @doc """
@@ -25,7 +25,7 @@ defmodule LogicGates do
   """
 
   def and_gate(a, b, c) do
-    and_gate(a,b) |> and_gate(c)
+    and_gate(a, b) |> and_gate(c)
   end
 
   @doc """
@@ -36,7 +36,7 @@ defmodule LogicGates do
       - b: second boolean input
   """
   def or_gate(a, b) when is_boolean(a) and is_boolean(b) do
-    a||b
+    a || b
   end
 
   @doc """
@@ -49,7 +49,7 @@ defmodule LogicGates do
   """
 
   def or_gate(a, b, c) do
-    or_gate(a,b) |> or_gate(c)
+    or_gate(a, b) |> or_gate(c)
   end
 
   @doc """
@@ -63,7 +63,7 @@ defmodule LogicGates do
   """
 
   def or_gate(a, b, c, d) do
-    or_gate(a,b,c) |> or_gate(d)
+    or_gate(a, b, c) |> or_gate(d)
   end
 
   @doc """
@@ -78,7 +78,7 @@ defmodule LogicGates do
   """
 
   def or_gate(a, b, c, d, e) do
-    or_gate(a,b,c,d) |> or_gate(e)
+    or_gate(a, b, c, d) |> or_gate(e)
   end
 
   @doc """
@@ -91,5 +91,4 @@ defmodule LogicGates do
   def not_gate(a) when is_boolean(a) do
     !a
   end
-
 end
