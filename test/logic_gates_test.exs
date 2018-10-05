@@ -9,14 +9,14 @@ defmodule LogicGatesTest do
     assert LogicGates.and_gate(false, false) == false
   end
 
-  test "or_gate makes 'or' operation" do
+  test "or_gate makes 'OR' operation" do
     assert LogicGates.or_gate(true, true) == true
     assert LogicGates.or_gate(true, false) == true
     assert LogicGates.or_gate(false, true) == true
     assert LogicGates.or_gate(false, false) == false
   end
 
-  test "not_gate makes 'not' operation" do
+  test "not_gate makes 'NOT' operation" do
     assert LogicGates.not_gate(true) == false
     assert LogicGates.not_gate(false) == true
   end
