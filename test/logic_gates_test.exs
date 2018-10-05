@@ -2,7 +2,7 @@ defmodule LogicGatesTest do
   use ExUnit.Case
   doctest LogicGates
 
-  test "and_gate makes 'and' operation" do
+  test "and_gate makes 'AND' operation" do
     assert LogicGates.and_gate(true, true) == true
     assert LogicGates.and_gate(true, false) == false
     assert LogicGates.and_gate(false, true) == false
